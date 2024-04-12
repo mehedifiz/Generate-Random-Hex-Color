@@ -36,23 +36,30 @@ function copyCode() {
 
   window.navigator.clipboard.writeText(outputCode);
 
-  generateToast( `${outputCode} , 'Copid'`);
+ generateToast(`${outputCode} Copied`);
+
 }
 
 function generateToast(msg) {
-  console.log(msg)
-
-  const div = document.createElement('div');
+  const div = document.createElement("div");
   div.className = "toast-msg";
-
   div.innerText = msg;
-  document.body.appendChild(div)
+  document.body.appendChild(div);
 
+  // Trigger the animation by adding the 'show' class
+  setTimeout(() => {
+    div.classList.add("show");
+  }, 10); // Short delay to ensure the transition occurs
 
- 
-
-
+  // Remove the toast message after a few seconds
+  setTimeout(() => {
+    div.classList.remove("show");
+    setTimeout(() => {
+      div.remove();
+    }, 500); // Wait for the animation to finish before removing the element
+  }, 3000); // Display duration
 }
+
 
 //toast mes
 
