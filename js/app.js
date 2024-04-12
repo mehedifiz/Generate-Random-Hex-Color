@@ -46,18 +46,18 @@ function generateToast(msg) {
   div.innerText = msg;
   document.body.appendChild(div);
 
-  // Trigger the animation by adding the 'show' class
+  
   setTimeout(() => {
     div.classList.add("show");
-  }, 10); // Short delay to ensure the transition occurs
+  }, 10); 
 
-  // Remove the toast message after a few seconds
+  
   setTimeout(() => {
     div.classList.remove("show");
     setTimeout(() => {
       div.remove();
-    }, 500); // Wait for the animation to finish before removing the element
-  }, 3000); // Display duration
+    }, 500); 
+  }, 3000); 
 }
 
 
