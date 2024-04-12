@@ -1,0 +1,82 @@
+body {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-color: 2px solid red;
+  background-color: bisque;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+.div {
+  margin-top: 40vh;
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically if needed */
+  gap: 10px;
+}
+
+
+.output-sec{
+  display: flex;
+  gap: 5px;
+
+}
+#copy-btn{
+  padding: 10px 16px ;
+  border-radius: 10px;
+  border: none;
+
+
+}
+#copy-btn:hover{
+
+  color: #ffffff;
+  background-color: black;
+
+
+}
+#btn{
+   padding: 10px 80px;
+  border: none;
+  border-radius: 5px;
+cursor: pointer;
+}
+#btn:hover{
+    
+    background-color: rgb(164, 40, 247);
+    color: cornsilk;}
+
+#text {
+    background-color: #00008b09;
+    text-shadow: 
+        1px 1px 0px rgb(255, 84, 169), 
+        -1px -1px 0px rgb(10, 152, 240); 
+}
+
+
+    #output{
+      display: block;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: azure;
+      text-align: center;
+      font-weight: 600;
+      
+    }
+
+    .toast-msg{
+      z-index: 999;;
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      background-color: rgb(19, 201, 110);
+      color: #f7000000;
+      border: 1PX solid #fff;
+      border-radius: .75rem;
+      padding: .75rem  1.45rem;
+      cursor: pointer;
+    }
